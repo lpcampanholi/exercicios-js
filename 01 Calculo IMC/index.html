@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <main>
+        <h1 class="titulo">Calculadora IMC</h1>
+
+        <form>
+            <div class="input-container">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" autofocus>
+            </div>
+
+            <div class="input-container">
+                <label for="altura">Altura</label>
+                <input type="number" name="altura" id="altura" placeholder="Metros">
+            </div>
+            
+            <div class="input-container">
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso" placeholder="Quilos">
+            </div>
+        </form>
+
+        <button class="botao" id="botao">Calcular</button>
+        <div class="resposta"></div>
+    </main>
+
+    <script src="./imc.js"></script>
     
 </body>
 </html>
